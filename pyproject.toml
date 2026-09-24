@@ -1,7 +1,7 @@
 [project]
 name = "cooking-core"
 version = "0.1.0"
-description = "Add your description here"
+description = "This is the core backend API for all of the functions of the cooking assistant."
 readme = "README.md"
 authors = [
     { name = "nobrien1", email = "nateobrien.dev@gmail.com" }
@@ -11,9 +11,5 @@ dependencies = [
     "fastapi[standard]>=0.141.1",
 ]
 
-[project.scripts]
-cooking-core = "cooking_core:main"
-
-[build-system]
-requires = ["uv_build>=0.12.18,<0.13.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false
